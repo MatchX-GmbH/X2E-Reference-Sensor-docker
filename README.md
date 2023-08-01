@@ -91,21 +91,21 @@ Assume the working directory is ```/home/you/matchx_dev```.
 
 10. Clone the project.
 
-   ```
-   cd /working
-   git clone --recurse-submodules git@gitlab.com:matchx/x2e_reference_sensor/x2e_ref-firmware.git
-   ```
+    ```
+    cd /working
+    git clone --recurse-submodules git@gitlab.com:matchx/x2e_reference_sensor/x2e_ref-firmware.git
+    ```
 
-   
+       
 
-11. Set the target for the project.
+11. Set the target for the project (example_device).
 
-   ```
-   cd /working/x2e_ref-firmware
-   idf.py set-target esp32s3
-   ```
+    ```
+    cd /working/x2e_ref-firmware/example_device
+    idf.py set-target esp32s3
+    ```
 
-   
+       
 
 11. Build the project
 
@@ -135,7 +135,8 @@ The working directory inside the container will has the structure shown below.
 
 ```
 /working
-  |-- x2e_ref-firmware    (X2E Ref Sensor Firmwares)
+  |-- x2e_ref-firmware       (X2E Ref Sensor Firmwares)
+        |-- example_device   (An example of LoRa device)
 ```
 
 
