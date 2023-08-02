@@ -23,7 +23,7 @@ Assume the working directory is ```/home/you/matchx_dev```.
    ```
    mkdir ~/matchx_dev
    cd ~/matchx_dev
-   git clone git@gitlab.com:matchx/nft-beacon/x2e_ref-dev-docker.git
+   git clone https://github.com/MatchX-GmbH/X2E-Reference-Sensor-docker.git
    ```
 
    
@@ -93,7 +93,8 @@ Assume the working directory is ```/home/you/matchx_dev```.
 
     ```
     cd /working
-    git clone --recurse-submodules git@gitlab.com:matchx/x2e_reference_sensor/x2e_ref-firmware.git
+    git clone --recurse-submodules \
+        https://github.com/MatchX-GmbH/X2E-Reference-Sensor-FW.git
     ```
 
        
@@ -158,5 +159,4 @@ The working directory inside the container will has the structure shown below.
 | ../working | /working           | The container working directory. |
 | home       | /home              | Home directory for users.        |
 | opt | /opt |  |
-| archives | /archives |  |
 
